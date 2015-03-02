@@ -42,7 +42,7 @@ namespace Tweet
                 {
                     Id = 2,
                     PostedBy = "Rahul Pawar",
-                    Text = "To bad I dont have a Tweeter Account."
+                    Text = "To bad I dont have a Twitter Account."
                 });
 
             // 3rd Tweet
