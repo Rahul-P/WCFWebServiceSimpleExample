@@ -3,6 +3,7 @@ namespace Tweet
 {
     using System.Collections.Generic;
     using System.IO;
+    using System.Linq;
     using System.Runtime.Serialization.Formatters.Binary;
 
     public class TweetService
@@ -25,6 +26,7 @@ namespace Tweet
                 SeedTweets();
             }
         }
+
         private void SeedTweets()
         {        
             // 1st Tweet
@@ -73,6 +75,45 @@ namespace Tweet
             {
                 formatter.Serialize(stream, this.Tweets);
             }
+        }
+
+        public IList<Tweet> GetTweets()
+        {
+            return this.Tweets;
+        }
+
+        public Tweet GetTweedById(int id)
+        {
+            return this.Tweets.SingleOrDefault(tweet => tweet.Id == id);
+        }
+
+        public void UpdateTweet(Tweet tweetForUpdate)
+        {
+            Tweet updateTweet = this.Tweets.SingleOrDefault(tweet => tweet.Id == tweetForUpdate.Id);
+
+            if (updateTweet != null)
+            {
+                // Employ advantage of List - Remove and Add Functions! Not a real application
+                // No need for any validations
+                this.Tweets.Remove(updateTweet);
+                this.Tweets.Add(tweetForUpdate);
+                SaveTweet();
+            }
+        }
+
+        public void AddNewTweet(Tweet addNewTweet)
+        {
+            int lastTweetdId = this.Tweets.Max(tweet => tweet.Id);
+            addNewTweet.Id = lastTweetdId + 1;
+            this.Tweets.Add(addNewTweet);
+            SaveTweet();
+        }
+
+        public void DeleteTweet(int tweetId)
+        {
+            Tweet deleteTweet = this.Tweets.SingleOrDefault(tweet => tweet.Id == tweetId);
+            this.Tweets.Remove(deleteTweet);
+            SaveTweet();
         }
     }
 }
