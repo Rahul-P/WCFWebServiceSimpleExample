@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tweet", "Tweet\Tweet.csproj", "{5507124B-1AFC-4D8F-A3CD-DFC273239A52}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tweet.WebService", "Tweet.WebService\Tweet.WebService.csproj", "{A2E9C35B-6B7E-47E3-A46B-7D744DBD676D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5507124B-1AFC-4D8F-A3CD-DFC273239A52} = {5507124B-1AFC-4D8F-A3CD-DFC273239A52}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

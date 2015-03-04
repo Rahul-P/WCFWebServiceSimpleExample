@@ -1,18 +1,25 @@
 ﻿
 namespace Tweet.WebService
 {
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Runtime.Serialization;
     using System.ServiceModel;
-    using System.Text;
 
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "ITweetService" in both code and config file together.
     [ServiceContract]
     public interface ITweetService
     {
         [OperationContract]
-        void DoWork();
+        IList<Tweet> GetTweets();
+
+        [OperationContract]
+        Tweet GetTweetByID(int tweetId);
+
+        [OperationContract]
+        void CreateTweet(Tweet newTweet);
+
+        [OperationContract]
+        void UpdateTweet(Tweet updateTweet);
+
+        [OperationContract]
+        void DeleteTweet(int updateTweetId);
     }
 }
