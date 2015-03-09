@@ -1,5 +1,5 @@
 ﻿
-namespace Tweet
+namespace TweetBL
 {
     using System.Collections.Generic;
     using System.IO;
@@ -60,7 +60,7 @@ namespace Tweet
             this.Tweets.Add(
                 new Tweet()
                 {
-                    Id = 3,
+                    Id = 4,
                     PostedBy = "Rahul Pawar",
                     Text = "Running out of time would have loved to use MongoDB here instead of a simple file :("
                 });
@@ -82,7 +82,7 @@ namespace Tweet
             return this.Tweets;
         }
 
-        public Tweet GetTweedById(int id)
+        public Tweet GetTweetById(int id)
         {
             return this.Tweets.SingleOrDefault(tweet => tweet.Id == id);
         }
@@ -101,7 +101,7 @@ namespace Tweet
             }
         }
 
-        public void AddNewTweet(Tweet addNewTweet)
+        public void CreateTweet(Tweet addNewTweet)
         {
             int lastTweetdId = this.Tweets.Max(tweet => tweet.Id);
             addNewTweet.Id = lastTweetdId + 1;

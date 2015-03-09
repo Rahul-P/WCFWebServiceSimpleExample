@@ -1,9 +1,11 @@
 ﻿
-namespace Tweet
+namespace TweetBL
 {
     using System;
     using System.Runtime.Serialization;
 
+    // This is our Data Object
+    
     [Serializable]
     [DataContract]
     public class Tweet

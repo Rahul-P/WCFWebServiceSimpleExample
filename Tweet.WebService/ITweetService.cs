@@ -3,6 +3,7 @@ namespace Tweet.WebService
 {
     using System.Collections.Generic;
     using System.ServiceModel;
+    using TweetBL;
 
     [ServiceContract]
     public interface ITweetService
@@ -20,6 +21,6 @@ namespace Tweet.WebService
         void UpdateTweet(Tweet updateTweet);
 
         [OperationContract]
-        void DeleteTweet(int updateTweetId);
+        void DeleteTweet(int deleteTweetId);
     }
 }

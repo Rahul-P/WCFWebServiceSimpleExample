@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tweet", "Tweet\Tweet.csproj", "{5507124B-1AFC-4D8F-A3CD-DFC273239A52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetBL", "Tweet\TweetBL.csproj", "{5507124B-1AFC-4D8F-A3CD-DFC273239A52}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tweet.WebService", "Tweet.WebService\Tweet.WebService.csproj", "{A2E9C35B-6B7E-47E3-A46B-7D744DBD676D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5507124B-1AFC-4D8F-A3CD-DFC273239A52} = {5507124B-1AFC-4D8F-A3CD-DFC273239A52}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetClient", "TweetClient\TweetClient.csproj", "{01E401DE-B57F-4188-9426-E783050EB492}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A2E9C35B-6B7E-47E3-A46B-7D744DBD676D} = {A2E9C35B-6B7E-47E3-A46B-7D744DBD676D}
 	EndProjectSection
 EndProject
 Global
@@ -24,6 +29,10 @@ Global
 		{A2E9C35B-6B7E-47E3-A46B-7D744DBD676D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2E9C35B-6B7E-47E3-A46B-7D744DBD676D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2E9C35B-6B7E-47E3-A46B-7D744DBD676D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01E401DE-B57F-4188-9426-E783050EB492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01E401DE-B57F-4188-9426-E783050EB492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01E401DE-B57F-4188-9426-E783050EB492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01E401DE-B57F-4188-9426-E783050EB492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

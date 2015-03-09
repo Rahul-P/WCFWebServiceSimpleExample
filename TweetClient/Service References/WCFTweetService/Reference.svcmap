@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5251012f-8d65-4504-b10e-ef770f2e6f61" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:44919/TweetService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TweetService.wsdl" MetadataType="Wsdl" ID="9191d7cc-f8cb-4f95-bd7f-0909ce564a31" SourceId="1" SourceUrl="http://localhost:44919/TweetService.svc?wsdl" />
+    <MetadataFile FileName="TweetService.xsd" MetadataType="Schema" ID="362c9de8-0d99-450c-b583-64d5f11abc05" SourceId="1" SourceUrl="http://localhost:44919/TweetService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TweetService1.xsd" MetadataType="Schema" ID="e342f3a5-3dc0-4d49-b1c7-50cf5b8565ed" SourceId="1" SourceUrl="http://localhost:44919/TweetService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TweetService.disco" MetadataType="Disco" ID="9db07273-7eaa-4ad9-ba2d-4c59e57b67ae" SourceId="1" SourceUrl="http://localhost:44919/TweetService.svc?disco" />
+    <MetadataFile FileName="TweetService2.xsd" MetadataType="Schema" ID="7d58797d-d142-4ea2-b7ef-8e47a6a95ac8" SourceId="1" SourceUrl="http://localhost:44919/TweetService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
